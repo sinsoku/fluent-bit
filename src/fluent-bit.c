@@ -1157,6 +1157,7 @@ int flb_main(int argc, char **argv)
     }
 
     flb_loop(ctx);
+    ret = config->exit_status_code;
     flb_destroy(ctx);
 
     return ret;
